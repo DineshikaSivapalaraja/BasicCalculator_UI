@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginEnd="80sp"
+        android:layout_marginBottom="36sp"
+        android:autofillHints="FirstNumber"
+        android:hint="Enter your input1"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/input2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your input2"
+        android:layout_marginStart="80sp"
+        android:layout_marginEnd="80sp"
+        android:layout_marginBottom="100sp"
+        android:autofillHints="SecondNumber"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/message1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Result is:"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="MainFragment"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message1"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:text="Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45sp"
+        android:layout_marginEnd="45sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@id/message">
+
+    </Button>
+
+    <Button
+        android:id = "@+id/subtractButton"
+        android:text = "Subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45sp"
+        android:layout_marginEnd="45sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@id/addButton">
+    </Button>
+
+    <Button
+        android:id = "@+id/multiplyButton"
+        android:text = "Multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45sp"
+        android:layout_marginEnd="45sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@id/subtractButton">
+    </Button>
+
+    <Button
+        android:id = "@+id/divideButton"
+        android:text = "Divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45sp"
+        android:layout_marginEnd="45sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@id/multiplyButton">
+    </Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
